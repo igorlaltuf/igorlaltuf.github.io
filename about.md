@@ -4,4 +4,5 @@ title: About
 permalink: /about/
 ---
 
-Another minimal style of Jekyll theme for writers. TESTESSSSSSSSSSSS
+Master's student at Urban and Regional Research and Planning Institute at Rio de Janeiro Federal University (IPPUR/UFRJ).
+Graduated in Economics from The Fluminense Federal University (2015).

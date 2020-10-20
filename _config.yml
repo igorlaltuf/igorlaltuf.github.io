@@ -1,8 +1,9 @@
-title: Hamilton
+title: Igor Laltuf - Researcher
 description: A minimal and beautiful Jekyll theme best for writing and note-taking.
-author: Shangzhi Huang
+author: Igor Laltuf
 avatar: /logo.png
-email: ngzhio@gmail.com
+email: teste@gmail.com
+location: Rio de Janeiro, RJ
 
 plugins:
   - jekyll-seo-tag
@@ -42,3 +43,4 @@ social:
 google_site_verification: u4WXQl0Eu66rsQo2kRdCNx
 lang: en
 skin: daylight
+date_format: %-d %b, %Y

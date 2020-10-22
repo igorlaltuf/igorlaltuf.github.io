@@ -2,13 +2,7 @@
   url: /about/
 - title: Research
   url: /research/
-- title: Categories
-  url: /categories/
-- title: Tags
-  url: /tags/
-- title: More
-  sublinks:
-    - title: FAQ
-      url: /faq/
-    - title: Docs
-      url: /docs/
+- title: Social Media
+  url: /social-media/
+- title: Blog
+  url: /Blog/

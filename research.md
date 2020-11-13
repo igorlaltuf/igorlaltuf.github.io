@@ -4,4 +4,4 @@ title: Research
 permalink: /research/
 ---
 
-TESTE!!!!!
+<div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>

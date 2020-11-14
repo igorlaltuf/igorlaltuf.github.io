@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 <body>
-<div id="includedContent"></div>
+<div></div>
 </body>
 
 

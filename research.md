@@ -4772,7 +4772,7 @@ function asArray(value) {
 
 <body>
 	<p>Desembolsos das operações diretas e indiretas não automáticas do BNDES (2008-2014) por região em bilhões (R$) de 2019</p>
-	<div style="position: relative; width: 100%; height: 500px">
+	<div style="position: relative; width: 80%; height: 500px">
       <div id="htmlwidget_container">
         <div id="htmlwidget-ead92105eb13425f8a6e" style="width:100%;height:400px;" class="leaflet html-widget"></div>
       </div>

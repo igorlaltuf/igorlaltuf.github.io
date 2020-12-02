@@ -13,6 +13,14 @@ permalink: /professional-experience/
   <li>Consultant at ATEMAB (2020).</li>
 </ul>
 
+<h2>Recommendations</h2>
+
+<ul>
+<li></li>
+<li></li>
+</ul>
+
+
 <h2>Skills</h2>
 <ul>
   <li></li>

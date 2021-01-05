@@ -16,3 +16,5 @@ In the following years, he continued working on the BNDES research project, whic
   <li>Sustainable development</li>
   <li>Political economy</li>
 </ul>
+
+<a href="http://lattes.cnpq.br/5699782942046423" target="_blank"> Lattes curriculum vitae</a>

@@ -7,4 +7,8 @@
 - title: Orcid
   url: https://orcid.org/0000-0002-5614-4404
   icon: fab fa-orcid
+- title: Research Gate
+  url: https://www.researchgate.net/profile/Igor-Laltuf
+  icon: fab fa-researchgate
+
 

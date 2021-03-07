@@ -18,3 +18,4 @@ In the following years, he continued working on the BNDES research project, whic
 </ul>
 
 <a href="http://lattes.cnpq.br/5699782942046423" target="_blank"> Lattes curriculum vitae</a>
+<a href="https://orcid.org/0000-0002-5614-4404" target="_blank"> ORCID</a>

@@ -13,6 +13,14 @@ permalink: /professional-experience/
   <li>Undergraduate Researcher at ETTERN-IPPUR-UFRJ (2012-2014).</li>
 </ul>
 
+<h2>Skills</h2>
+<ul>
+  <li>R Programming and main data analysis packages (tidyverse, geobr, leaflet)</li>
+  <li>MS Excel</li>
+  <li>Gitbash</li>
+  <li>HTML and CSS3</li>
+</ul>
+
 <h2>Recommendations</h2>
 
 <p>"I have known Igor since 2012, when he started as a research fellow in a project on the BNDES by the Ford Foundation. He has stood out since the beginning for his research, analysis and teamwork skills as well as his ease as a promoter and coordinator. In fact, due to his qualities, he was responsible for coordinating teams of undergraduate students as soon as he finished graduation. Of the students I know in more than 10 years of teaching and research at Universidade Federal Fluminense and Universidade Federal do Rio de Janeiro, I can say that Igor is among the most outstanding, characterized by his excellence and commitment ". <br> <a href="http://lattes.cnpq.br/6500629622404446" target="_blank">Phd. Javier Walter Ghibaudi (UFF)</a></P>
@@ -21,11 +29,3 @@ permalink: /professional-experience/
 In 2020, I invited Igor, already a master's student, to compose the team of the university extension program Technical and Educational Advisory on the Environment and Dams / ATEMAB, which I coordinate at UFRRJ. Within the program's activities, between July and December 2020, we developed an Advisory Project for the socioeconomic valuation of material and immaterial damage caused by the triggering of ArcelorMittal's emergency plan in Itatiaiuçu (MG). During the pandemic, with very short deadlines, Igor again stood out among 24 researchers (master's and doctoral students) in the survey of sources and in the production of systematizations absolutely essential for the success of the project, notably in terms of the valuation of damage to work and income those affected by mining. I can affirm that, whether in academic research stricto sensu, or in applied social sciences consulting, Igor Laltuf is a brilliant, committed, responsible, creative and very determinant researcher for the success of projects and teamwork". <br> <a href="http://lattes.cnpq.br/2951088346516057" target="_blank">Phd. Flávia Braga Vieira (UFRRJ)</a></p>
 
 <p>"Igor Laltuf was a researcher at the State, Labor, Territory and Nature Laboratory -ETTERN, of IPPUR-UFRJ, working under my coordination in the <i>BNDES decisory processes</i> research line, between March 2013 and December 2014. He worked in the scheduling and preparation of interviews with dozens of BNDES managers and superintendents. In addition, it contributed to the analysis and systematization of the data provided in graphs, tables and diagrams. He is not only a competent researcher, he also stands out for his extreme loyalty and reliability". <br> <a href="http://lattes.cnpq.br/6969099594370398" target="_blank">Phd. Luis Fernando Novoa Garzon (UNIR)</a></p>
-
-<h2>Skills</h2>
-<ul>
-  <li>R Programming and main data analysis packages (tidyverse, geobr, leaflet)</li>
-  <li>MS Excel</li>
-  <li>Gitbash</li>
-  <li>HTML and CSS3</li>
-</ul>

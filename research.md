@@ -4923,7 +4923,7 @@ function asArray(value) {
 <style>.leaflet-container {background:#FFFFFF;}</style>
 </head>
 <body style="background-color: white;">
-<p>Valor das contratações do BNDES de 2002 até 2020 (2002-2020) por UF em bilhões de reais (valores correntes)</p>
+<p>Gráfico 1 - Valor das contratações do BNDES de 2002 até 2020 por UF em bilhões de reais - valores correntes</p>
 	<div style="position: relative; width: 80%; height: 500px">
     <div id="htmlwidget_container">
     <div id="htmlwidget-fb1344bb5cf77656bfeb" class="leaflet html-widget" style="width:100%;height:400px;"></div>

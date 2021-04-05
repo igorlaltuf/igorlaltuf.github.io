@@ -15,10 +15,10 @@ permalink: /professional-experience/
 
 <h2>Skills</h2>
 <ul>
-  <li>R Programming and main data analysis packages (tidyverse, geobr, leaflet)</li>
-  <li>MS Excel</li>
-  <li>Gitbash</li>
-  <li>HTML and CSS3</li>
+  <li>R Programming and main data analysis packages (tidyverse, geobr, leaflet).</li>
+  <li>MS Excel.</li>
+  <li>Gitbash.</li>
+  <li>HTML and CSS3.</li>
 </ul>
 
 <h2>Recommendations</h2>

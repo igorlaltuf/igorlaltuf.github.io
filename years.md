@@ -6,6 +6,7 @@ permalink: /professional-experience/
 
 <h2>Professional Experience</h2>
 <ul>
+  <li>Consultant at FAO (2021).</li>
   <li>Consultant at ATEMAB (2020).</li>
   <li>Postgraduate researcher at IPPUR (2019-).</li>
   <li>Graduate Researcher at ETTERN-IPPUR-UFRJ (2015-2019).</li>

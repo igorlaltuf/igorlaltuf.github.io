@@ -392,7 +392,7 @@
 
       <div class="row no-gutters justify-content-between mb-3">
         <div class="col-6">
-          <h1></h1>
+          <h1>Search</h1>
         </div>
         <div class="col-6 col-search-close">
           <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
@@ -401,9 +401,9 @@
 
       <div id="search-box">
         
-        <input name="q" id="search-query" placeholder="" autocapitalize="off"
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
         autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
-        aria-label="">
+        aria-label="Search...">
         
       </div>
 
@@ -451,7 +451,7 @@
 
       
       <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="">
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
       <span><i class="fas fa-bars"></i></span>
       </button>
       
@@ -673,7 +673,7 @@
         
         
         <li class="nav-item">
-          <a class="nav-link js-search" href="#" aria-label=""><i class="fas fa-search" aria-hidden="true"></i></a>
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
         </li>
         
 
@@ -685,13 +685,13 @@
           </a>
           <div class="dropdown-menu">
             <a href="#" class="dropdown-item js-set-theme-light">
-              <span>Light</span>
+              <span>Claro</span>
             </a>
             <a href="#" class="dropdown-item js-set-theme-dark">
-              <span>Dark</span>
+              <span>Escuro</span>
             </a>
             <a href="#" class="dropdown-item js-set-theme-auto">
-              <span>Automatic</span>
+              <span>Automático</span>
             </a>
           </div>
         </li>
@@ -701,7 +701,7 @@
         
         <li class="nav-item dropdown i18n-dropdown">
           <a href="#" class="nav-link " data-toggle="dropdown"
-             aria-haspopup="true" aria-label="Languages">
+             aria-haspopup="true" aria-label="Idiomas">
             <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
           <div class="dropdown-menu">
             <div class="dropdown-item dropdown-item-active">
@@ -770,37 +770,30 @@
         
         
       
-        
-        
-      
 
       <div class="form-row mb-4">
         <div class="col-auto">
-          <input type="search" class="filter-search form-control form-control-sm" placeholder="" autocapitalize="off"
+          <input type="search" class="filter-search form-control form-control-sm" placeholder="Search..." autocapitalize="off"
           autocomplete="off" autocorrect="off" role="textbox" spellcheck="false">
         </div>
         <div class="col-auto">
           <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
-            <option value="*"></option>
+            <option value="*">Type</option>
             
-            
-            <option value=".pubtype-1">
-              Uncategorized
-            </option>
             
             <option value=".pubtype-2">
-              Uncategorized
+              Journal article
             </option>
             
-            <option value=".pubtype-3">
-              Uncategorized
+            <option value=".pubtype-6">
+              Book section
             </option>
             
           </select>
         </div>
         <div class="col-auto">
           <select class="pub-filters form-control form-control-sm" data-filter-group="year">
-            <option value="*"></option>
+            <option value="*">Date</option>
             
             
             
@@ -808,12 +801,8 @@
               2021
             </option>
             
-            <option value=".year-2019">
-              2019
-            </option>
-            
-            <option value=".year-2013">
-              2013
+            <option value=".year-2017">
+              2017
             </option>
             
             
@@ -828,7 +817,7 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-2 year-2021">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-50 year-2021">
           
 
 
@@ -867,14 +856,14 @@
 
 
 <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ojs.iade.org.ar/index.php/re/article/view/151/115" target="_blank" rel="noopener">
-  
+  PDF
 </a>
 
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/artigo-javier-2021/cite.bib">
-  
+  Cite
 </a>
 
 
@@ -888,15 +877,21 @@
 
 
 
+
+
+  
   
   
     
   
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ojs.iade.org.ar/index.php/re/article/view/151" target="_blank" rel="noopener">
   
-</a>
-
-
+  
+  
+  
+    
+  
+  <a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ojs.iade.org.ar/index.php/re/article/view/151" target="_blank" rel="noopener">
+    Revista</a>
 
 </p>
 
@@ -912,7 +907,7 @@
           
         
 
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-3 year-2019">
+        <div class="grid-sizer col-lg-12 isotope-item pubtype-54 year-2017">
           
 
 
@@ -925,11 +920,12 @@
   <span class="article-metadata li-cite-author">
     
 
-  <span class="author-highlighted">
+  <span >
+      <a href="/author/javier-walter-ghibaudi/">Javier Walter Ghibaudi</a></span>, <span class="author-highlighted">
       <a href="/author/igor-laltuf/">Igor Laltuf</a></span>
   </span>
-  (2019).
-  <a href="/publication/livro-ettern/">An example preprint / working paper</a>.
+  (2017).
+  <a href="/publication/livro-ettern/">BNDES:grupos econômicos, setor público e sociedade civil (Capítulo 1)</a>.
   
   <p>
 
@@ -946,130 +942,19 @@
 
 
 
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://arxiv.org/pdf/1512.04133v1" target="_blank" rel="noopener">
-  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://web.bndes.gov.br/bib/jspui/bitstream/1408/18980/1/FCLiv213784_BNDES_grupos%20economicos%20setor%20p%c3%bablico%20e%20sociedade%20civil_2017_P_BD.pdf" target="_blank" rel="noopener">
+  PDF
 </a>
 
 
 
 <a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
         data-filename="/publication/livro-ettern/cite.bib">
-  
-</a>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">
-  
-</a>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/#" target="_blank" rel="noopener">
-  
+  Cite
 </a>
 
 
 
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/internal-project/">
-    
-  </a>
-  
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/#" target="_blank" rel="noopener">
-  
-</a>
-
-
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/example/" target="_blank">
-    
-  </a>
-  
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/#" target="_blank" rel="noopener">
-  
-</a>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/#" target="_blank" rel="noopener">
-  
-</a>
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://example.org" target="_blank" rel="noopener">
-    Custom Link</a>
-
-</p>
-
-  
-  
-</div>
-
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2013">
-          
-
-
-<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span class="author-highlighted">
-      <a href="/author/igor-laltuf/">Igor Laltuf</a></span>, <span >
-      <a href="/author/robert-ford/">Robert Ford</a></span>
-  </span>
-  (2013).
-  <a href="/publication/conference-paper/">An example conference paper</a>.
-  In <em>STC</em>.
-  
-  <p>
 
 
 
@@ -1078,99 +963,8 @@
 
 
 
-  
-    
-  
 
 
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="http://eprints.soton.ac.uk/352095/1/Cushen-IMV2013.pdf" target="_blank" rel="noopener">
-  
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/conference-paper/cite.bib">
-  
-</a>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">
-  
-</a>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/#" target="_blank" rel="noopener">
-  
-</a>
-
-
-
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/project/internal-project/">
-    
-  </a>
-  
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/#" target="_blank" rel="noopener">
-  
-</a>
-
-
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="/slides/example/" target="_blank">
-    
-  </a>
-  
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/#" target="_blank" rel="noopener">
-  
-</a>
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/#" target="_blank" rel="noopener">
-  
-</a>
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  
-  
-    
-  
-  <a class="btn btn-outline-primary btn-page-header btn-sm" href="http://example.org" target="_blank" rel="noopener">
-    Custom Link</a>
 
 </p>
 
@@ -1240,7 +1034,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title"></h5>
+        <h5 class="modal-title">Cite</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -1250,10 +1044,10 @@
       </div>
       <div class="modal-footer">
         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> 
+          <i class="fas fa-copy"></i> Copy
         </a>
         <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> 
+          <i class="fas fa-download"></i> Download
         </a>
         <div id="modal-error"></div>
       </div>
@@ -1365,7 +1159,7 @@
       
     
     
-    <script src="/pt-br/js/wowchemy.min.3a17c500e74c8a344a38f62db2a5a2ba.js"></script>
+    <script src="/pt-br/js/wowchemy.min.247fd8f54253895301106e3006f53f38.js"></script>
 
     
   <script async defer src="https://buttons.github.io/buttons.js"></script>

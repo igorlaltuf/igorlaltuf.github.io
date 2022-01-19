@@ -44,7 +44,7 @@
       href="https://igorlaltuf.github.io/project/"
     /></url>
   <url>
-    <loc>https://igorlaltuf.github.io/</loc><lastmod>2021-12-03T17:00:00+00:00</lastmod><xhtml:link
+    <loc>https://igorlaltuf.github.io/</loc><lastmod>2022-01-19T11:21:04-03:00</lastmod><xhtml:link
       rel="alternate"
       hreflang="en"
       href="https://igorlaltuf.github.io/en/"
@@ -53,6 +53,18 @@
       hreflang="pt-br"
       href="https://igorlaltuf.github.io/"
     /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/post/</loc><lastmod>2022-01-19T11:21:04-03:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/post/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/post/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/post/como-usar-o-pacote-sidrar/</loc><lastmod>2022-01-19T11:21:04-03:00</lastmod></url>
   <url>
     <loc>https://igorlaltuf.github.io/tag/covid-19/</loc><lastmod>2021-12-03T17:00:00+00:00</lastmod></url>
   <url>
@@ -164,128 +176,6 @@
       href="https://igorlaltuf.github.io/courses/example/"
     /></url>
   <url>
-    <loc>https://igorlaltuf.github.io/tag/academic/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/tag/academic/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/tag/academic/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/categories/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/categories/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/categories/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/category/demo/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/category/demo/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/category/demo/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/post/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/post/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/post/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/post/getting-started/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/post/getting-started/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/post/getting-started/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/author/%E5%90%B3%E6%81%A9%E9%81%94/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/author/%E5%90%B3%E6%81%A9%E9%81%94/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/author/%E5%90%B3%E6%81%A9%E9%81%94/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/tag/%E5%BC%80%E6%BA%90/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/tag/%E5%BC%80%E6%BA%90/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/tag/%E5%BC%80%E6%BA%90/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/category/%E6%95%99%E7%A8%8B/</loc><lastmod>2020-12-13T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/category/%E6%95%99%E7%A8%8B/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/category/%E6%95%99%E7%A8%8B/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/post/writing-technical-content/</loc><lastmod>2019-07-12T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/post/writing-technical-content/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/post/writing-technical-content/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/publication-type/3/</loc><lastmod>2019-04-07T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/publication-type/3/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/publication-type/3/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/publication/livro-ettern/</loc><lastmod>2019-04-07T00:00:00+00:00</lastmod></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/tag/source-themes/</loc><lastmod>2019-04-07T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/tag/source-themes/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/tag/source-themes/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/post/jupyter/</loc><lastmod>2019-09-05T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/post/jupyter/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/post/jupyter/"
-    /></url>
-  <url>
     <loc>https://igorlaltuf.github.io/slides/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><xhtml:link
       rel="alternate"
       hreflang="en"
@@ -306,6 +196,12 @@
       href="https://igorlaltuf.github.io/slides/example/"
     /></url>
   <url>
+    <loc>https://igorlaltuf.github.io/publication-type/6/</loc><lastmod>2017-06-07T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/publication/livro-ettern/</loc><lastmod>2017-06-07T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tag/financiamento-publico/</loc><lastmod>2017-06-07T00:00:00+00:00</lastmod></url>
+  <url>
     <loc>https://igorlaltuf.github.io/tag/linguagem-r/</loc><lastmod>2016-01-18T10:00:00+00:00</lastmod></url>
   <url>
     <loc>https://igorlaltuf.github.io/project/internal-project/</loc><lastmod>2016-01-18T10:00:00+00:00</lastmod><xhtml:link
@@ -322,36 +218,6 @@
   <url>
     <loc>https://igorlaltuf.github.io/tag/software/</loc><lastmod>2016-01-18T10:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://igorlaltuf.github.io/publication-type/1/</loc><lastmod>2013-07-01T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/publication-type/1/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/publication-type/1/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/publication/conference-paper/</loc><lastmod>2013-07-01T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/publication/conference-paper/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/publication/conference-paper/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/author/robert-ford/</loc><lastmod>2013-07-01T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/author/robert-ford/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/author/robert-ford/"
-    /></url>
-  <url>
     <loc>https://igorlaltuf.github.io/admin/</loc><xhtml:link
       rel="alternate"
       hreflang="en"
@@ -360,4 +226,14 @@
       rel="alternate"
       hreflang="pt-br"
       href="https://igorlaltuf.github.io/admin/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/categories/</loc><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/categories/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/categories/"
     /></url></urlset>

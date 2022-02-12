@@ -1,0 +1,1266 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.4.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Igor Laltuf" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="O pacote sidraR permite acessar os dados do Sidra (Sistema IBGE de Recuperação Automática) diretamente pelo R. No exemplo de hoje, vamos fazer um levantamento para descobrir quais foram os municípios brasileiros responsáveis pela maior parte do valor de soja produzido nas regiões Norte e Centro-Oeste em 2020." />
+
+  
+    <link rel="alternate" hreflang="pt-br" href="https://igorlaltuf.github.io/post/como-usar-o-pacote-sidrar/" />
+  
+  <link rel="alternate" hreflang="en-us" href="https://igorlaltuf.github.io/en/post/como-usar-o-pacote-sidrar/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.512574799414e7d36471486881070b0f.css" />
+
+  
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0C1R76NDV5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'G-0C1R76NDV5', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/en/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu765fed44f9da9f8bbfd31b2fd32d48fd_17366_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu765fed44f9da9f8bbfd31b2fd32d48fd_17366_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://igorlaltuf.github.io/en/post/como-usar-o-pacote-sidrar/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Igor Laltuf" />
+  <meta property="og:url" content="https://igorlaltuf.github.io/en/post/como-usar-o-pacote-sidrar/" />
+  <meta property="og:title" content="Como usar o pacote sidraR | Igor Laltuf" />
+  <meta property="og:description" content="O pacote sidraR permite acessar os dados do Sidra (Sistema IBGE de Recuperação Automática) diretamente pelo R. No exemplo de hoje, vamos fazer um levantamento para descobrir quais foram os municípios brasileiros responsáveis pela maior parte do valor de soja produzido nas regiões Norte e Centro-Oeste em 2020." /><meta property="og:image" content="https://igorlaltuf.github.io/media/icon_hu765fed44f9da9f8bbfd31b2fd32d48fd_17366_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://igorlaltuf.github.io/media/icon_hu765fed44f9da9f8bbfd31b2fd32d48fd_17366_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2022-01-24T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2022-01-14T11:21:04-03:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://igorlaltuf.github.io/en/post/como-usar-o-pacote-sidrar/"
+  },
+  "headline": "Como usar o pacote sidraR",
+  
+  "datePublished": "2022-01-24T00:00:00Z",
+  "dateModified": "2022-01-14T11:21:04-03:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Igor Laltuf"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Igor Laltuf",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://igorlaltuf.github.io/media/icon_hu765fed44f9da9f8bbfd31b2fd32d48fd_17366_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "O pacote sidraR permite acessar os dados do Sidra (Sistema IBGE de Recuperação Automática) diretamente pelo R. No exemplo de hoje, vamos fazer um levantamento para descobrir quais foram os municípios brasileiros responsáveis pela maior parte do valor de soja produzido nas regiões Norte e Centro-Oeste em 2020."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Como usar o pacote sidraR | Igor Laltuf</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="db331cb2ce1daae54ae6c84e72100ca3" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.8f76bdc9e086322ed5147724ebba3d06.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/en/">Igor Laltuf</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/en/">Igor Laltuf</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/#about"><span>About</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/project/"><span>Software | Data</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/publication/"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/en/event/"><span>Events</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/en/post/"><span>Blog</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+        <li class="nav-item dropdown i18n-dropdown">
+          <a href="#" class="nav-link " data-toggle="dropdown"
+             aria-haspopup="true" aria-label="Languages">
+            <i class="fas fa-globe mr-1" aria-hidden="true"></i></a>
+          <div class="dropdown-menu">
+            <div class="dropdown-item dropdown-item-active">
+              <span>English</span>
+            </div>
+            
+            <a class="dropdown-item" href="https://igorlaltuf.github.io/post/como-usar-o-pacote-sidrar/">
+              <span></span>
+            </a>
+            
+          </div>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Como usar o pacote sidraR</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Jan 14, 2022
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    7 min read
+  </span>
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      
+<script src="https://igorlaltuf.github.io/en/post/como-usar-o-pacote-sidrar/index_files/header-attrs/header-attrs.js"></script>
+
+
+<p>O pacote sidraR permite acessar os dados do <a href="https://sidra.ibge.gov.br/">Sidra</a> (Sistema IBGE de Recuperação Automática) diretamente pelo R. No exemplo de hoje, vamos fazer um levantamento para descobrir quais foram os municípios brasileiros responsáveis pela maior parte do valor de soja produzido nas regiões Norte e Centro-Oeste em 2020.</p>
+<p>Vamos agrupar os valores de cada município que produz soja em quatro categorias - baixo, médio baixo, médio alto e alto. Os intervalos abrangidos pelas categorias serão definidor por meio dos quartis.</p>
+<p>Como o pacote está no <a href="https://cran.r-project.org/web/packages/sidrar/index.html">CRAN</a>, a instalação será pelo comando:</p>
+<pre class="r"><code>install.packages(&#39;sidrar&#39;)</code></pre>
+<p>A função abaixo permite identificar aquelas tabelas do IBGE que contenham determinadas palavras-chave em seus títulos. <strong>Importante</strong>: não é permitido usar acentos nessa função.</p>
+<pre class="r"><code>x &lt;- search_sidra(&#39;lavouras temporarias valor da producao&#39;)
+x</code></pre>
+<pre style="max-height: 500px;"><code>##  [1] &quot;Tabela 498 - Valor da produção por produtos das lavouras temporárias e grupos de área total&quot;                                                                                                                                                                                                                                        
+##  [2] &quot;Tabela 499 - Valor da produção por produtos das lavouras temporárias e grupo de atividade econômica&quot;                                                                                                                                                                                                                                
+##  [3] &quot;Tabela 500 - Valor da produção por produtos das lavouras temporárias e condição do produtor em relação às terras&quot;                                                                                                                                                                                                                   
+##  [4] &quot;Tabela 822 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária por produtos da lavoura temporária, condição produtor em relação às terras, grupos de atividade econômica, grupos de área total e grupos de área colhida&quot;                                                                                      
+##  [5] &quot;Tabela 824 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária por produtos da lavoura temporária, tipo de semente, tipo de colheita, tipo de cultivo e destino da produção&quot;                                                                                                                                  
+##  [6] &quot;Tabela 825 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária por produtos da lavoura temporária, uso de irrigação, uso de agrotóxicos, uso de adubação e principal mês de plantio e de colheita&quot;                                                                                                            
+##  [7] &quot;Tabela 1272 - Produtos da lavoura temporária nos estabelecimentos agropecuários, segundo indicadores da agricultura familiar e não familiar - FAO&quot;                                                                                                                                                                                  
+##  [8] &quot;Tabela 1612 - Área plantada, área colhida, quantidade produzida, rendimento médio e valor da produção das lavouras temporárias&quot;                                                                                                                                                                                                     
+##  [9] &quot;Tabela 1712 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária nos estabelecimentos agropecuários, por produtos da lavoura temporária, condição produtor em relação às terras, grupos de atividade econômica, grupos de área total e grupos de área colhida - (MDA - PRONAF)&quot;                                
+## [10] &quot;Tabela 1716 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária nos estabelecimentos agropecuários, por produtos da lavoura temporária, tipo de semente, tipo de colheita e tipo de cultivo - (MDA - PRONAF)&quot;                                                                                                 
+## [11] &quot;Tabela 1720 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária nos estabelecimentos agropecuários, por produtos da lavoura temporária, uso de agrotóxicos, uso de adubação e principal mês de plantio e de colheita - (MDA - PRONAF)&quot;                                                                        
+## [12] &quot;Tabela 1723 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária nos estabelecimentos agropecuários, por produtos da lavoura temporária, destino da produção e uso de irrigação - (MDA - PRONAF)&quot;                                                                                                              
+## [13] &quot;Tabela 1823 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária por produtos da lavoura temporária e grupos e classes de atividade&quot;                                                                                                                                                                           
+## [14] &quot;Tabela 2237 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária nos estabelecimentos agropecuários, com agricultura familiar e não familiar, por produtos da lavoura temporária, condição produtor em relação às terras, grupos de atividade econômica, grupos de área total e grupos de área colhida - (MDA)&quot;
+## [15] &quot;Tabela 2265 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária nos estabelecimentos agropecuários, com agricultura familiar e não familiar, por produtos da lavoura temporária, tipo de semente, tipo de colheita e tipo de cultivo - (MDA)&quot;                                                                 
+## [16] &quot;Tabela 2266 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária nos estabelecimentos agropecuários, com agricultura familiar e não familiar, por produtos da lavoura temporária, uso de agrotóxicos, uso de adubação e principal mês de plantio e de colheita - (MDA)&quot;                                        
+## [17] &quot;Tabela 2284 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária nos estabelecimentos agropecuários, com agricultura familiar e não familiar, por produtos da lavoura temporária, destino da produção e uso de irrigação - (MDA)&quot;                                                                              
+## [18] &quot;Tabela 2868 - Produção, Valor da produção e Área colhida da lavoura temporária por produtos da lavoura temporária, grupos e classes de atividade econômica e uso de agricultura orgânica&quot;                                                                                                                                           
+## [19] &quot;Tabela 3374 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária por produtos da lavoura temporária, sexo e residência do produtor, orientação técnica, origem da orientação técnica e nivel de instrução da pessoa que dirige o estabelecimento&quot;                                                              
+## [20] &quot;Tabela 3411 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária por produtos da lavoura temporária, segundo indicadores da agricultura familiar e não familiar - FAO&quot;                                                                                                                                         
+## [21] &quot;Tabela 4109 - Produção, Venda, Valor da produção e Área colhida da lavoura temporária, por produtos da lavoura temporária, tipo de colheita, tipo de semente e classificações de médio produtor&quot;                                                                                                                                    
+## [22] &quot;Tabela 5457 - Área plantada ou destinada à colheita, área colhida, quantidade produzida, rendimento médio e valor da produção das lavouras temporárias e permanentes&quot;                                                                                                                                                               
+## [23] &quot;Tabela 6957 - Produção, Valor da produção, Venda, Valor da venda e Área colhida da lavoura temporária nos estabelecimentos agropecuários, por tipologia, produtos da lavoura temporária, condição do produtor em relação às terras e grupos de atividade econômica&quot;                                                                 
+## [24] &quot;Tabela 6958 - Produção, Valor da produção, Venda, Valor da venda e Área colhida da lavoura temporária nos estabelecimentos agropecuários, por tipologia, produtos da lavoura temporária, tipo de semente e grupos de área colhida&quot;                                                                                                  
+## [25] &quot;Tabela 6959 - Produção, Valor da produção, Venda, Valor da venda e Área colhida da lavoura temporária nos estabelecimentos agropecuários, por tipologia, produtos da lavoura temporária e grupos de área total&quot;</code></pre>
+<p>Após uma breve leitura dos nomes das tabelas, percebe-se que a informação que precisamos está na Tabela 1612, que contém o valor da produção (em mil reais) segundo a pesquisa de Produção Agrícola Municipal. Agora, basta usar a função get_sidra() para baixar os dados da tabela direto para o R na estrutura de um dataframe. Na própria função é possível selecionar os dados que serão baixados de acordo com recorte geográfico, filtrar apenas dados de determinada região ou até mesmo selecionar uma variável específica.</p>
+<pre class="r"><code>x &lt;- get_sidra(x = 1612)</code></pre>
+<iframe seamless src="tab1.html" width="100%" height="500">
+</iframe>
+<p>Como o objetivo aqui é baixar os dados com o valor da produção, eu seleciono a variável número 215 (valor da produção) por meio do atributo “variable”. O problema é que ao usar a função get_sidra para baixar os dados da tabela, somos surpreendidos com a mensagem: “Quantidade de valores solicitados X linhas excedeu o limite: 50000”. Ou seja, existe uma limitação de que os dados baixados sejam de apenas 50.000 por requisição. Para contornar essa limitação, a solução foi fazer uma requisição para cada região e ir armazenando os resultados em uma tabela que criativamente foi chamada de “tabela”.</p>
+<pre class="r"><code>regiao &lt;- c(1,5)
+tabela &lt;- data.frame()
+
+for(i in regiao){
+  x &lt;- get_sidra(x = 1612, # código da tabela no Sidra
+                 geo = &#39;City&#39;, # nível de detalhe espacial da informação
+                 geo.filter = list(&quot;Region&quot; = i), #região
+                 variable = 215, # variável de interesse
+                 period = as.character(2020) # ano dos dados
+                 )
+tabela &lt;- rbind(tabela,x)
+}
+x &lt;- datatable(tabela)</code></pre>
+<p>Como resultado temos a seguinte tabela:</p>
+<iframe seamless src="x.html" width="100%" height="500">
+</iframe>
+<p>Agora vamos filtrar a produção de soja, selecionar apenas aquelas variáveis (colunas do meu dataframe) que serão usadas, substituir os valores faltantes por zero, remover os municípios que tem valor igual a zero e classificar os valores nas categorias baixa, média baixa, média alta e alta.</p>
+<pre class="r"><code>tabela_class &lt;- tabela %&gt;%
+  janitor::clean_names() %&gt;%
+  select(5,6,7,9,13) %&gt;%
+  replace(is.na(.), 0) %&gt;% 
+  dplyr::filter(produto_das_lavouras_temporarias %in% &quot;Soja (em grão)&quot;,
+                valor &gt; 0) %&gt;%
+  arrange(desc(valor)) 
+
+tabela_class &lt;- tabela_class %&gt;% 
+  mutate(class = case_when(
+         valor &lt;= summary(tabela_class$valor)[2] ~ &quot;Baixo&quot;,
+         valor &lt;= summary(tabela_class$valor)[3] ~ &quot;Médio Baixo&quot;,
+         valor &lt;= summary(tabela_class$valor)[5] ~ &quot;Médio Alto&quot;,
+         valor &gt; summary(tabela_class$valor)[5] ~ &quot;Alto&quot;
+         ),
+         class = factor(class,
+                        levels = c(&quot;Baixo&quot;,&quot;Médio Baixo&quot;,&quot;Médio Alto&quot;,&quot;Alto&quot;))
+         )
+tabela_class$municipio_codigo &lt;- as.double(tabela_class$municipio_codigo)</code></pre>
+<p>Os resultados podem ser verificados na tabela e no mapa abaixo:</p>
+<iframe seamless src="tab_class.html" width="100%" height="500">
+</iframe>
+<pre class="r"><code>library(mapview)
+library(geobr)
+library(RColorBrewer)
+mapviewOptions(fgb = FALSE)
+mapa_soja &lt;- geobr::read_municipality(showProgress = F) %&gt;% 
+  filter(str_detect(code_state, &quot;^1|^5&quot;)) %&gt;% 
+  left_join(tabela_class, by = c(&#39;code_muni&#39; = &#39;municipio_codigo&#39;))
+
+mapa_soja &lt;- mapview::mapview(mapa_soja, zcol = &quot;class&quot;, label = &#39;name_muni&#39;, col.regions = brewer.pal(4, &quot;YlOrRd&quot;))
+
+mapview::mapshot(mapa_soja, url = &#39;mapa.html&#39;) # salva mapview em html</code></pre>
+<iframe seamless src="mapa.html" width="100%" height="500">
+</iframe>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://igorlaltuf.github.io/"><img class="avatar mr-3 avatar-circle" src="/en/author/igor-laltuf/avatar_hu6ecd24c6d2ca2793480f1d4fcd6eb950_2177491_270x270_fill_q75_lanczos_center.jpg" alt="Igor Laltuf"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://igorlaltuf.github.io/">Igor Laltuf</a></h5>
+      <h6 class="card-subtitle">Economist</h6>
+      
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.researchgate.net/profile/Igor-Laltuf" target="_blank" rel="noopener">
+        <i class="fab fa-researchgate"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/igorlaltuf" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0002-5614-4404" target="_blank" rel="noopener">
+        <i class="fab fa-orcid"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/igor-laltuf/?locale=en_US" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://lattes.cnpq.br/5699782942046423" target="_blank" rel="noopener">
+        <i class="ai ai-lattes"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+  <p class="powered-by">
+    © 2022 Igor Laltuf
+  </p>
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+    
+    
+      <script src="/js/wowchemy-headroom.1cb9e2fc8399acee94eab837265b73bf.js" type="module"></script>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.ae7412086cb4046202b0e7ae6719e99a.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>

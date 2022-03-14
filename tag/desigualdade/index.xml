@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Desigualdade | Igor Laltuf</title>
+    <link>https://igorlaltuf.github.io/tag/desigualdade/</link>
+      <atom:link href="https://igorlaltuf.github.io/tag/desigualdade/index.xml" rel="self" type="application/rss+xml" />
+    <description>Desigualdade</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language><copyright>© 2022 Igor Laltuf</copyright><lastBuildDate>Mon, 18 Jan 2016 10:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://igorlaltuf.github.io/media/icon_hu765fed44f9da9f8bbfd31b2fd32d48fd_17366_512x512_fill_lanczos_center_3.png</url>
+      <title>Desigualdade</title>
+      <link>https://igorlaltuf.github.io/tag/desigualdade/</link>
+    </image>
+    
+    <item>
+      <title>Material interativo (Dissertação IPPUR-UFRJ)</title>
+      <link>https://igorlaltuf.github.io/project/material-dissertacao/</link>
+      <pubDate>Mon, 18 Jan 2016 10:00:00 +0000</pubDate>
+      <guid>https://igorlaltuf.github.io/project/material-dissertacao/</guid>
+      <description>&lt;p&gt;Os mapas abaixo fazem parte da Dissertação apresentada no Curso de Mestrado do Programa de Pós-Graduação em Planejamento Urbano e Regional da Universidade Federal do Rio de Janeiro – UFRJ, como parte dos requisitos necessários à obtenção do grau de Mestre em Planejamento Urbano e Regional.
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Em caso de citação:&lt;/p&gt;
+&lt;p&gt;LALTUF, Igor. &lt;strong&gt;O Sistema BRT e a Economia Política do transporte público na cidade do Rio de Janeiro&lt;/strong&gt;. 2022. Dissertação (Mestrado em Planejamento Urbano e Regional). Instituto de Pesquisa e Planejamento Urbano e Regional, Universidade Federal do Rio de Janeiro, Rio de Janeiro, 2022.&lt;/p&gt;
+&lt;p&gt;Mapa 1 - Percentual de residentes que receberam até 5 salários mínimos por bairro em 2010.&lt;/p&gt;
+&lt;iframe seamless src=&#34;mapa_bairros_rj.html&#34; width=&#34;100%&#34; height=&#34;500&#34;&gt;&lt;/iframe&gt;
+Fonte: Censo de 2010. Elaboração própria.
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+Mapa 2 - Classificação da variação de vínculos ativos de cada bairro em relação ao total do município entre 2019 e 2020 
+&lt;iframe seamless src=&#34;bairros_RAIS_Rio.html&#34; width=&#34;100%&#34; height=&#34;500&#34;&gt;&lt;/iframe&gt;
+Fonte: Dados da RAIS via datalake base dos dados. Elaboração própria.
+</description>
+    </item>
+    
+  </channel>
+</rss>

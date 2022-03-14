@@ -367,6 +367,27 @@ if porridge == &amp;quot;blueberry&amp;quot;:
     </item>
     
     <item>
+      <title>Material interativo (Dissertação IPPUR-UFRJ)</title>
+      <link>https://igorlaltuf.github.io/project/material-dissertacao/</link>
+      <pubDate>Mon, 18 Jan 2016 10:00:00 +0000</pubDate>
+      <guid>https://igorlaltuf.github.io/project/material-dissertacao/</guid>
+      <description>&lt;p&gt;Os mapas abaixo fazem parte da Dissertação apresentada no Curso de Mestrado do Programa de Pós-Graduação em Planejamento Urbano e Regional da Universidade Federal do Rio de Janeiro – UFRJ, como parte dos requisitos necessários à obtenção do grau de Mestre em Planejamento Urbano e Regional.
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Em caso de citação:&lt;/p&gt;
+&lt;p&gt;LALTUF, Igor. &lt;strong&gt;O Sistema BRT e a Economia Política do transporte público na cidade do Rio de Janeiro&lt;/strong&gt;. 2022. Dissertação (Mestrado em Planejamento Urbano e Regional). Instituto de Pesquisa e Planejamento Urbano e Regional, Universidade Federal do Rio de Janeiro, Rio de Janeiro, 2022.&lt;/p&gt;
+&lt;p&gt;Mapa 1 - Percentual de residentes que receberam até 5 salários mínimos por bairro em 2010.&lt;/p&gt;
+&lt;iframe seamless src=&#34;mapa_bairros_rj.html&#34; width=&#34;100%&#34; height=&#34;500&#34;&gt;&lt;/iframe&gt;
+Fonte: Censo de 2010. Elaboração própria.
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+Mapa 2 - Classificação da variação de vínculos ativos de cada bairro em relação ao total do município entre 2019 e 2020 
+&lt;iframe seamless src=&#34;bairros_RAIS_Rio.html&#34; width=&#34;100%&#34; height=&#34;500&#34;&gt;&lt;/iframe&gt;
+Fonte: Dados da RAIS via datalake base dos dados. Elaboração própria.
+</description>
+    </item>
+    
+    <item>
       <title>O pacote DAIL - Data from Access to Information Law</title>
       <link>https://igorlaltuf.github.io/project/internal-project/</link>
       <pubDate>Mon, 18 Jan 2016 10:00:00 +0000</pubDate>

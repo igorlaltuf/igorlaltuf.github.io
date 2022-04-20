@@ -5,12 +5,103 @@
     <link>https://igorlaltuf.github.io/post/</link>
       <atom:link href="https://igorlaltuf.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language><copyright>© 2022 Igor Laltuf</copyright><lastBuildDate>Mon, 24 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language><copyright>© 2022 Igor Laltuf</copyright><lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://igorlaltuf.github.io/media/icon_hu765fed44f9da9f8bbfd31b2fd32d48fd_17366_512x512_fill_lanczos_center_3.png</url>
       <title>Blog</title>
       <link>https://igorlaltuf.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>Como acessar os dados da Lei de Acesso à Informação do Executivo Federal brasileiro?</title>
+      <link>https://igorlaltuf.github.io/post/como-usar-o-pacote-dail/</link>
+      <pubDate>Wed, 20 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://igorlaltuf.github.io/post/como-usar-o-pacote-dail/</guid>
+      <description>
+&lt;script src=&#34;https://igorlaltuf.github.io/post/como-usar-o-pacote-dail/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Uma das grandes vantagens de utilizar o R como ferramenta para a análise de dados é a possibilidade de utilizar pacotes. Os pacotes nada mais são do que um conjunto de algoritmos e/ou dados, geralmente disponibilizados em um repositório. Eles são o “padrão-ouro” do compartilhamento de conhecimento no R.&lt;/p&gt;
+&lt;p&gt;Criar o pacote Data Access to Information Law (DAIL) foi uma forma que encontrei de tornar o processo de análise dos dados da Lei de Acesso à Informação mais prático. Ele permite baixar e realizar buscas nos dados disponibilizados pela Controladoria Geral da União (CGU) desde o ano de 2015. É uma ferramenta que permite fazer análises quantitativas e qualitativas sobre as respostas do poder público diante dos questionamentos da sociedade civil.&lt;/p&gt;
+&lt;p&gt;No exemplo abaixo, apelando para o imaginário popular, vamos analisar todos os pedidos de acesso à informação sobre Objetos Voadores Não Idenficados (OVNIs), com o intuito de responder as seguintes perguntas:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Quantos pedidos sobre o assunto foram feitos desde 2015?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Qual foi a quantidade realizada de pedidos em cada ano?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Quais órgãos mais receberam pedidos sobre o assunto?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Qual foi a proporção de pedidos que tiveram o acesso concedido (mesmo que parcialmente)?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para instalar o pacote, utilizamos o comando:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;#39;dail&amp;#39;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;E para carregar os pacotes que serão usados:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dail)
+library(dplyr)
+library(ggplot2)
+library(lubridate)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O DAIL contém apenas duas funções: requests() e appeals(). A primeira faz o download dos pedidos, a segunda dos dados dos recursos. Por meio do argumento “search” é possível buscar por uma palavra-chave específica.&lt;/p&gt;
+&lt;p&gt;É possível tanto fazer o download de todos os pedidos e recursos feitos de 2015 até 2022, como também executar a busca por uma palavra-chave específica dentro dos campos das perguntas ou de suas respostas.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;requests(search = &amp;#39;all&amp;#39;) # faz o download de todos os pedidos.
+
+requests(search = &amp;#39;ovni&amp;#39;) # faz o download de todos os pedidos e retorna aqueles que contenham a palavra &amp;quot;ovni&amp;quot; na pergunta realizada ao poder público.
+
+requests(search = &amp;#39;ovni&amp;#39;, answer = T) # faz o download de todos os pedidos e retorna aqueles que contenham a palavra &amp;quot;ovni&amp;quot; na resposta enviada pelo poder público.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O algoritmo de busca do pacote retorna exatamente a palavra que é inserida no argumento search, ou seja, se eu digitar a palavra “carro”, a função não me retorna os pedidos que contenham as palavras “carros” ou “carroceria”.
+Para contornar esta limitação, foram feitas seis buscas, que no final tiveram seus resultados unificados na mesma tabela, de modo que fosse possível excluir as linhas repetidas.&lt;/p&gt;
+&lt;p&gt;Para fazer as requisições, basta rodar:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;busca1 &amp;lt;- requests(search = &amp;#39;ovni&amp;#39;)
+busca2 &amp;lt;- requests(search = &amp;#39;ovnis&amp;#39;)
+busca3 &amp;lt;- requests(search = &amp;#39;objeto voador não identificado&amp;#39;)
+busca4 &amp;lt;- requests(search = &amp;#39;objetos voadores não identificados&amp;#39;)
+busca5 &amp;lt;- requests(search = &amp;#39;ufo&amp;#39;)
+busca6 &amp;lt;- requests(search = &amp;#39;unidentified flying object&amp;#39;)
+
+x &amp;lt;- unique(rbind(busca1,busca2,busca3,busca4,busca5,busca6)) %&amp;gt;%
+  mutate(data_registro = as_date(dmy(data_registro))) %&amp;gt;%
+  arrange(data_registro)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;O código acima retorna uma tabela com todos os pedidos na ordem em que foram realizados. Ao todo, foram encontrados 152 pedidos de acesso à informação sobre OVNIS de 2015 até março de 2022.&lt;/p&gt;
+&lt;iframe seamless src=&#34;lai_ovni.html&#34; width=&#34;100%&#34; height=&#34;500&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;br&gt;
+Os anos de 2015 e 2020 registraram as maiores quantidade de pedidos, 50 e 34, respectivamente.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x_anos &amp;lt;- x %&amp;gt;%
+  mutate(ano = year(data_registro)) %&amp;gt;%
+  group_by(ano) %&amp;gt;%
+  count()
+
+ggplot() +
+  geom_bar(data = x_anos, aes(x = ano, y = n), stat = &amp;#39;identity&amp;#39;) +
+  labs(y = &amp;#39;quantidade de pedidos&amp;#39;, x = &amp;#39;ano&amp;#39;) +
+  scale_x_continuous(n.breaks = 8) +
+  theme_classic()
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;plot_ano.png&#34; width=&#34;100%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Ao realizar a leitura de alguns dos pedidos, a explicação para a grande quantidade de pedidos nos dois anos mencionados anteriormente deve-se ao fato de que, aparentemente, a mesma pessoa realizou uma grande quantidade de pedidos para diversas instituições, o que foi identificado por meio da similaridade da escrita nas perguntas enviadas.&lt;/p&gt;
+&lt;p&gt;Sobre os órgãos que mais responderam pedidos sobre o assunto, apenas três deles concentraram 55% das solicitações recebidas no período: COMAER (Comando da Aeronáutica), AN (Arquivo Nacional) e CEX (Comando do Exército).&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x_orgao &amp;lt;- x %&amp;gt;%
+  group_by(orgao) %&amp;gt;%
+  count() %&amp;gt;%
+  rename(&amp;#39;quantidade_de_pedidos&amp;#39; = n) %&amp;gt;% 
+  arrange(desc(quantidade_de_pedidos))
+&lt;/code&gt;&lt;/pre&gt;
+&lt;iframe seamless src=&#34;lai_orgao.html&#34; width=&#34;100%&#34; height=&#34;500&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Por fim, quanto ao tipo de resposta, apenas em 64% delas foi concedido o acesso à informação, mesmo que parcial.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x_decisao &amp;lt;- x %&amp;gt;%
+  group_by(decisao) %&amp;gt;%
+  count() %&amp;gt;%
+  rename(&amp;#39;quantidade_de_pedidos&amp;#39; = n)&lt;/code&gt;&lt;/pre&gt;
+&lt;iframe seamless src=&#34;lai_decisao.html&#34; width=&#34;100%&#34; height=&#34;500&#34;&gt;
+&lt;/iframe&gt;
+&lt;p&gt;&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Por fim, para entender melhor o conteúdo dos pedidos e o tipo de informação solicitada, seria necessário verificar o conteúdo dos pedidos - e das suas respostas - por meio de uma análise qualitativa ou com a aplicação de técnicas de análise textual (também possível via linguagem R).&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Como usar o pacote sidraR</title>

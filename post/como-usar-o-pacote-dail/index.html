@@ -824,17 +824,19 @@
 <pre class="r"><code>library(dail)
 library(dplyr)
 library(ggplot2)
-library(lubridate)
-</code></pre>
+library(lubridate)</code></pre>
 <p>O DAIL contém apenas duas funções: requests() e appeals(). A primeira faz o download dos pedidos, a segunda dos dados dos recursos. Por meio do argumento “search” é possível buscar por uma palavra-chave específica.</p>
 <p>É possível tanto fazer o download de todos os pedidos e recursos feitos de 2015 até 2022, como também executar a busca por uma palavra-chave específica dentro dos campos das perguntas ou de suas respostas.</p>
-<pre class="r"><code>requests(search = &#39;all&#39;) # faz o download de todos os pedidos.
+<pre class="r"><code># fazer o download de todos os pedidos
+requests(search = &#39;all&#39;) .
 
-requests(search = &#39;ovni&#39;) # faz o download de todos os pedidos e retorna aqueles que contenham a palavra &quot;ovni&quot; na pergunta realizada ao poder público.
+# fazer o download de todos os pedidos e filtrar aqueles que contenham a palavra &quot;ovni&quot; na pergunta.
+requests(search = &#39;ovni&#39;) 
 
-requests(search = &#39;ovni&#39;, answer = T) # faz o download de todos os pedidos e retorna aqueles que contenham a palavra &quot;ovni&quot; na resposta enviada pelo poder público.
+# fazer o download de todos os pedidos e filtrar aqueles que contenham a palavra &quot;ovni&quot; na resposta.
+requests(search = &#39;ovni&#39;, answer = T) 
 </code></pre>
-<p>O algoritmo de busca do pacote retorna exatamente a palavra que é inserida no argumento search, ou seja, se eu digitar a palavra “carro”, a função não me retorna os pedidos que contenham as palavras “carros” ou “carroceria”.
+<p>O algoritmo de busca do pacote retorna exatamente a palavra que é inserida no argumento “search”, ou seja, se eu digitar a palavra “carro”, a função não me retorna os pedidos que contenham as palavras “carros” ou “carroceria”.
 Para contornar esta limitação, foram feitas seis buscas, que no final tiveram seus resultados unificados na mesma tabela, de modo que fosse possível excluir as linhas repetidas.</p>
 <p>Para fazer as requisições, basta rodar:</p>
 <pre class="r"><code>busca1 &lt;- requests(search = &#39;ovni&#39;)
@@ -886,7 +888,7 @@ ggplot() +
 </iframe>
 <p><br>
 <br></p>
-<p>Por fim, para entender melhor o conteúdo dos pedidos e o tipo de informação solicitada, seria necessário verificar o conteúdo dos pedidos - e das suas respostas - por meio de uma análise qualitativa ou com a aplicação de técnicas de análise textual (também possível via linguagem R).</p>
+<p>Por fim, para entender os detalhes sobre o tipo de informação solicitada, seria necessário verificar o conteúdo dos pedidos - e das suas respostas - por meio de uma análise qualitativa ou com a aplicação de técnicas de análise textual (também possível via linguagem R).</p>
 
     </div>
 

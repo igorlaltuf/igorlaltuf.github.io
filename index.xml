@@ -133,7 +133,7 @@ The variance of the distribution is $\sigma^{2}$.
 library(dplyr)
 library(ggplot2)
 library(lubridate)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;O DAIL contém apenas duas funções: requests() e appeals(). A primeira faz o download dos pedidos, a segunda dos dados dos recursos. Por meio do argumento “search” é possível buscar por uma palavra-chave específica.&lt;/p&gt;
+&lt;p&gt;O DAIL contém apenas duas funções: requests() e appeals(). A primeira faz o download dos pedidos, a segunda realiza dos dados provenientes dos recursos. Por meio do argumento “search” é possível buscar por uma palavra-chave específica.&lt;/p&gt;
 &lt;p&gt;É possível tanto fazer o download de todos os pedidos e recursos feitos de 2015 até 2022, como também executar a busca por uma palavra-chave específica dentro dos campos das perguntas ou de suas respostas.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# fazer o download de todos os pedidos
 requests(search = &amp;#39;all&amp;#39;) .
@@ -157,7 +157,7 @@ busca6 &amp;lt;- requests(search = &amp;#39;unidentified flying object&amp;#39;)
 x &amp;lt;- unique(rbind(busca1,busca2,busca3,busca4,busca5,busca6)) %&amp;gt;%
   mutate(data_registro = as_date(dmy(data_registro))) %&amp;gt;%
   arrange(data_registro)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;O código acima retorna uma tabela com todos os pedidos na ordem em que foram realizados. Ao todo, foram encontrados 152 pedidos de acesso à informação sobre OVNIS de 2015 até março de 2022.&lt;/p&gt;
+&lt;p&gt;O código acima retorna uma tabela com todos os pedidos na ordem em que foram realizados. Ao todo, foram encontrados 155 pedidos de acesso à informação sobre OVNIS de 2015 até março de 2022.&lt;/p&gt;
 &lt;iframe seamless src=&#34;lai_ovni.html&#34; width=&#34;100%&#34; height=&#34;500&#34;&gt;
 &lt;/iframe&gt;
 &lt;p&gt;&lt;br&gt;

@@ -22,23 +22,23 @@
 
 
 &lt;p&gt;Uma das grandes vantagens de utilizar o R como ferramenta para a análise de dados é a possibilidade de utilizar pacotes. Os pacotes nada mais são do que um conjunto de algoritmos e/ou dados, geralmente disponibilizados em um repositório. Eles são o “padrão-ouro” do compartilhamento de conhecimento no R.&lt;/p&gt;
-&lt;p&gt;Criar o pacote Data Access to Information Law (DAIL) foi uma forma que encontrei de tornar o processo de análise dos dados da Lei de Acesso à Informação mais prático. Ele permite baixar e realizar buscas nos dados disponibilizados pela Controladoria Geral da União (CGU) desde o ano de 2015. É uma ferramenta que permite fazer análises quantitativas e qualitativas sobre as respostas do poder público diante dos questionamentos da sociedade civil.&lt;/p&gt;
+&lt;p&gt;Criar o pacote Data Access to Information Law (DAIL) foi uma forma que encontrei de tornar o processo de análise dos dados da Lei de Acesso à Informação mais prático. Ele permite baixar e realizar buscas nos dados disponibilizados pela Controladoria Geral da União (CGU) desde o ano de 2015. É uma ferramenta que permite fazer análises quantitativas e qualitativas sobre as respostas do poder público aos questionamentos da sociedade civil.&lt;/p&gt;
 &lt;p&gt;No exemplo abaixo, apelando para o imaginário popular, vamos analisar todos os pedidos de acesso à informação sobre Objetos Voadores Não Idenficados (OVNIs), com o intuito de responder as seguintes perguntas:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;Quantos pedidos sobre o assunto foram feitos desde 2015?&lt;/p&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;Qual foi a quantidade realizada de pedidos em cada ano?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Qual foi a quantidade de pedidos realizada em cada ano?&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Quais órgãos mais receberam pedidos sobre o assunto?&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;Qual foi a proporção de pedidos que tiveram o acesso concedido (mesmo que parcialmente)?&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Para instalar o pacote, utilizamos o comando:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;install.packages(&amp;#39;dail&amp;#39;)
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;E para carregar os pacotes que serão usados:&lt;/p&gt;
+&lt;p&gt;E então carregamos os pacotes que serão usados:&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(dail)
 library(dplyr)
 library(ggplot2)
 library(lubridate)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;O DAIL contém apenas duas funções: requests() e appeals(). A primeira faz o download dos pedidos, a segunda realiza dos dados provenientes dos recursos. Por meio do argumento “search” é possível buscar por uma palavra-chave específica.&lt;/p&gt;
+&lt;p&gt;O DAIL contém apenas duas funções: requests() e appeals(). A primeira faz o download dos pedidos e a segunda realiza o download dos dados provenientes dos recursos que foram abertos (questionando as respostas dos pedidos). Por meio do argumento “search” é possível buscar por uma palavra-chave específica.&lt;/p&gt;
 &lt;p&gt;É possível tanto fazer o download de todos os pedidos e recursos feitos de 2015 até 2022, como também executar a busca por uma palavra-chave específica dentro dos campos das perguntas ou de suas respostas.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# fazer o download de todos os pedidos
 requests(search = &amp;#39;all&amp;#39;) .
@@ -80,8 +80,8 @@ ggplot() +
   theme_classic()
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;plot_ano.png&#34; width=&#34;100%&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Ao realizar a leitura de alguns dos pedidos, a explicação para a grande quantidade de pedidos nos dois anos mencionados anteriormente deve-se ao fato de que, aparentemente, a mesma pessoa realizou uma grande quantidade de pedidos para diversas instituições, o que foi identificado por meio da similaridade da escrita nas perguntas enviadas.&lt;/p&gt;
-&lt;p&gt;Sobre os órgãos que mais responderam pedidos sobre o assunto, apenas três deles concentraram 55% das solicitações recebidas no período: COMAER (Comando da Aeronáutica), AN (Arquivo Nacional) e CEX (Comando do Exército).&lt;/p&gt;
+&lt;p&gt;Ao realizar a leitura de alguns dos pedidos, a explicação para a grande quantidade de pedidos nos dois anos mencionados anteriormente deve-se ao fato de que, aparentemente, a mesma pessoa realizou uma grande quantidade de pedidos para diversas instituições, o que foi identificado pela similaridade de escrita nas perguntas enviadas.&lt;/p&gt;
+&lt;p&gt;Sobre os órgãos que mais responderam pedidos sobre o assunto, apenas três deles concentraram 55% das solicitações recebidas no período: Comando da Aeronáutica (COMAER), Arquivo Nacional(AN) e Comando do Exército(CEX).&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x_orgao &amp;lt;- x %&amp;gt;%
   group_by(orgao) %&amp;gt;%
   count() %&amp;gt;%
@@ -92,7 +92,7 @@ ggplot() +
 &lt;/iframe&gt;
 &lt;p&gt;&lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Por fim, quanto ao tipo de resposta, apenas em 64% delas foi concedido o acesso à informação, mesmo que parcial.&lt;/p&gt;
+&lt;p&gt;Mesmo considerando aqueles casos em que o governo forneceu o acesso parcial aos dados, em apenas 64% das resposta foi concedido o acesso à informação.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;x_decisao &amp;lt;- x %&amp;gt;%
   group_by(decisao) %&amp;gt;%
   count() %&amp;gt;%
@@ -101,7 +101,7 @@ ggplot() +
 &lt;/iframe&gt;
 &lt;p&gt;&lt;br&gt;
 &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Por fim, para entender os detalhes sobre o tipo de informação solicitada, seria necessário verificar o conteúdo dos pedidos - e das suas respostas - por meio de uma análise qualitativa ou com a aplicação de técnicas de análise textual (também possível via linguagem R).&lt;/p&gt;
+&lt;p&gt;Por fim, para entender os detalhes sobre o tipo de informação solicitada seria necessário verificar o conteúdo de cada um dos pedidos - e das suas respostas - por meio de uma análise qualitativa ou com a aplicação de técnicas de análise textual (também possível via linguagem R).&lt;/p&gt;
 </description>
     </item>
     

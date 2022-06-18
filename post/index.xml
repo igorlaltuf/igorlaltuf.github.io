@@ -5,12 +5,26 @@
     <link>https://igorlaltuf.github.io/post/</link>
       <atom:link href="https://igorlaltuf.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language><copyright>© 2022 Igor Laltuf</copyright><lastBuildDate>Wed, 20 Apr 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language><copyright>© 2022 Igor Laltuf</copyright><lastBuildDate>Sat, 18 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://igorlaltuf.github.io/media/icon_hu765fed44f9da9f8bbfd31b2fd32d48fd_17366_512x512_fill_lanczos_center_3.png</url>
       <title>Blog</title>
       <link>https://igorlaltuf.github.io/post/</link>
     </image>
+    
+    <item>
+      <title>O pacote DAIL virou dica da semana</title>
+      <link>https://igorlaltuf.github.io/post/o-pacote-dail-na-m-dia/</link>
+      <pubDate>Sat, 18 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://igorlaltuf.github.io/post/o-pacote-dail-na-m-dia/</guid>
+      <description>
+
+
+&lt;p&gt;No início de junho, o pacote DAIL (Data from Access to Information Law) foi indicado como dica da semana pela newsletter &lt;a href=&#34;https://investigadora.substack.com/&#34;&gt;Investigadora&lt;/a&gt;, uma parceria da &lt;a href=&#34;https://www.abraji.org.br/&#34;&gt;Abraji&lt;/a&gt; (Associação Brasileira de Jornalismo Investigativo) com o &lt;a href=&#34;https://brasil.io/home/&#34;&gt;Brasil.IO&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Confira a matéria &lt;a href=&#34;https://investigadora.substack.com/p/31-emendoduto-da-pavimentacao-e-a&#34;&gt;clicando aqui&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;foto_dail.png&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Como acessar os dados da Lei de Acesso à Informação do Executivo Federal brasileiro?</title>

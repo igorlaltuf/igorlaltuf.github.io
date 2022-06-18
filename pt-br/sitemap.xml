@@ -34,7 +34,7 @@
       href="https://igorlaltuf.github.io/courses/example/stats/"
     /></url>
   <url>
-    <loc>https://igorlaltuf.github.io/project/</loc><lastmod>2016-01-18T10:00:00+00:00</lastmod><xhtml:link
+    <loc>https://igorlaltuf.github.io/project/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod><xhtml:link
       rel="alternate"
       hreflang="en"
       href="https://igorlaltuf.github.io/en/project/"
@@ -44,7 +44,7 @@
       href="https://igorlaltuf.github.io/project/"
     /></url>
   <url>
-    <loc>https://igorlaltuf.github.io/</loc><lastmod>2022-04-20T00:00:00+00:00</lastmod><xhtml:link
+    <loc>https://igorlaltuf.github.io/</loc><lastmod>2022-06-18T11:39:09-03:00</lastmod><xhtml:link
       rel="alternate"
       hreflang="en"
       href="https://igorlaltuf.github.io/en/"
@@ -54,7 +54,69 @@
       href="https://igorlaltuf.github.io/"
     /></url>
   <url>
-    <loc>https://igorlaltuf.github.io/post/</loc><lastmod>2022-04-20T00:00:00+00:00</lastmod><xhtml:link
+    <loc>https://igorlaltuf.github.io/tag/desigualdade/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tag/linguagem-r/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/tag/linguagem-r/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/tag/linguagem-r/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/project/material-dissertacao/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/project/internal-project/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/project/internal-project/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/project/internal-project/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tag/pacotes/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/tag/pacotes/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/tag/pacotes/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tag/pandemia/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tag/renda/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tag/rio-de-janeiro/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tag/software/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/tag/software/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/tag/software/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tags/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/tags/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/tags/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tag/vinculos-ativos/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/post/</loc><lastmod>2022-06-18T11:39:09-03:00</lastmod><xhtml:link
       rel="alternate"
       hreflang="en"
       href="https://igorlaltuf.github.io/en/post/"
@@ -63,6 +125,8 @@
       hreflang="pt-br"
       href="https://igorlaltuf.github.io/post/"
     /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/post/o-pacote-dail-na-m-dia/</loc><lastmod>2022-06-18T11:39:09-03:00</lastmod></url>
   <url>
     <loc>https://igorlaltuf.github.io/post/como-usar-o-pacote-dail/</loc><lastmod>2022-04-20T00:00:00+00:00</lastmod></url>
   <url>
@@ -114,16 +178,6 @@
       rel="alternate"
       hreflang="pt-br"
       href="https://igorlaltuf.github.io/talk/mobilidade-urbana-no-contexto-desigual-da-pandemia-de-covid-19/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/tags/</loc><lastmod>2021-12-03T17:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/tags/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/tags/"
     /></url>
   <url>
     <loc>https://igorlaltuf.github.io/talk/indicadores-de-saude-nas-cidades-intermediarias-amazonicas-como-sinalizadores-de-segregacao-social-e-injustica-ambiental/</loc><lastmod>2021-12-03T14:00:00+00:00</lastmod><xhtml:link
@@ -315,58 +369,6 @@
       hreflang="pt-br"
       href="https://igorlaltuf.github.io/tag/financiamento-publico/"
     /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/tag/desigualdade/</loc><lastmod>2016-01-18T10:00:00+00:00</lastmod></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/tag/linguagem-r/</loc><lastmod>2016-01-18T10:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/tag/linguagem-r/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/tag/linguagem-r/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/project/material-dissertacao/</loc><lastmod>2016-01-18T10:00:00+00:00</lastmod></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/project/internal-project/</loc><lastmod>2016-01-18T10:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/project/internal-project/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/project/internal-project/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/tag/pacotes/</loc><lastmod>2016-01-18T10:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/tag/pacotes/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/tag/pacotes/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/tag/pandemia/</loc><lastmod>2016-01-18T10:00:00+00:00</lastmod></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/tag/renda/</loc><lastmod>2016-01-18T10:00:00+00:00</lastmod></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/tag/rio-de-janeiro/</loc><lastmod>2016-01-18T10:00:00+00:00</lastmod></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/tag/software/</loc><lastmod>2016-01-18T10:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/tag/software/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/tag/software/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/tag/vinculos-ativos/</loc><lastmod>2016-01-18T10:00:00+00:00</lastmod></url>
   <url>
     <loc>https://igorlaltuf.github.io/admin/</loc><xhtml:link
       rel="alternate"

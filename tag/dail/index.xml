@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DAIL | Igor Laltuf</title>
+    <link>https://igorlaltuf.github.io/tag/dail/</link>
+      <atom:link href="https://igorlaltuf.github.io/tag/dail/index.xml" rel="self" type="application/rss+xml" />
+    <description>DAIL</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language><copyright>© 2022 Igor Laltuf</copyright><lastBuildDate>Sun, 07 Aug 2022 14:45:00 +0000</lastBuildDate>
+    <image>
+      <url>https://igorlaltuf.github.io/media/icon_hu765fed44f9da9f8bbfd31b2fd32d48fd_17366_512x512_fill_lanczos_center_3.png</url>
+      <title>DAIL</title>
+      <link>https://igorlaltuf.github.io/tag/dail/</link>
+    </image>
+    
+    <item>
+      <title>Quer aprender a programar em R? Os pacotes vão te ajudar.</title>
+      <link>https://igorlaltuf.github.io/talk/quer-aprender-a-programar-em-r-os-pacotes-vao-te-ajudar./</link>
+      <pubDate>Sun, 07 Aug 2022 14:45:00 +0000</pubDate>
+      <guid>https://igorlaltuf.github.io/talk/quer-aprender-a-programar-em-r-os-pacotes-vao-te-ajudar./</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

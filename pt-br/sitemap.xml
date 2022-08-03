@@ -4,36 +4,6 @@
   
   
   <url>
-    <loc>https://igorlaltuf.github.io/courses/example/python/</loc><lastmod>2021-01-01T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/courses/example/python/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/courses/example/python/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/courses/example/visualization/</loc><lastmod>2021-01-01T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/courses/example/visualization/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/courses/example/visualization/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/courses/example/stats/</loc><lastmod>2021-01-01T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/courses/example/stats/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/courses/example/stats/"
-    /></url>
-  <url>
     <loc>https://igorlaltuf.github.io/project/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod><xhtml:link
       rel="alternate"
       hreflang="en"
@@ -82,6 +52,26 @@
       rel="alternate"
       hreflang="pt-br"
       href="https://igorlaltuf.github.io/tags/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/courses/</loc><lastmod>2022-08-01T00:00:00+00:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/courses/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/courses/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/courses/example/</loc><lastmod>2022-08-01T00:00:00+00:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/courses/example/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/courses/example/"
     /></url>
   <url>
     <loc>https://igorlaltuf.github.io/tag/desigualdade/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod></url>
@@ -308,26 +298,6 @@
       rel="alternate"
       hreflang="pt-br"
       href="https://igorlaltuf.github.io/publication/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/courses/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/courses/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/courses/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/courses/example/</loc><lastmod>2021-01-24T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/courses/example/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/courses/example/"
     /></url>
   <url>
     <loc>https://igorlaltuf.github.io/slides/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><xhtml:link

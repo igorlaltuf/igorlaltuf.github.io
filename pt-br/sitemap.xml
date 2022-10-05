@@ -14,7 +14,7 @@
       href="https://igorlaltuf.github.io/project/"
     /></url>
   <url>
-    <loc>https://igorlaltuf.github.io/</loc><lastmod>2022-08-07T14:45:00+00:00</lastmod><xhtml:link
+    <loc>https://igorlaltuf.github.io/</loc><lastmod>2022-10-05T00:00:00+00:00</lastmod><xhtml:link
       rel="alternate"
       hreflang="en"
       href="https://igorlaltuf.github.io/en/"
@@ -22,6 +22,88 @@
       rel="alternate"
       hreflang="pt-br"
       href="https://igorlaltuf.github.io/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/publication-type/2/</loc><lastmod>2022-10-05T00:00:00+00:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/publication-type/2/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/publication-type/2/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tag/amazonia/</loc><lastmod>2022-10-05T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/authors/</loc><lastmod>2022-10-05T00:00:00+00:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/authors/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/authors/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tag/covid-19/</loc><lastmod>2022-10-05T00:00:00+00:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/tag/covid-19/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/tag/covid-19/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/author/igor-laltuf/</loc><lastmod>2022-10-05T00:00:00+00:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/author/igor-laltuf/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/author/igor-laltuf/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tag/indicadores-de-saude/</loc><lastmod>2022-10-05T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/publication/artigo-sec-xxi/</loc><lastmod>2022-10-05T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tag/injustica-ambiental/</loc><lastmod>2022-10-05T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/author/luis-fernando-novoa-garzon/</loc><lastmod>2022-10-05T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/publication_types/</loc><lastmod>2022-10-05T00:00:00+00:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/publication_types/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/publication_types/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/publication/</loc><lastmod>2022-10-05T00:00:00+00:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/publication/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/publication/"
+    /></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tag/segregacao-social/</loc><lastmod>2022-10-05T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://igorlaltuf.github.io/tags/</loc><lastmod>2022-10-05T00:00:00+00:00</lastmod><xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://igorlaltuf.github.io/en/tags/"
+    /><xhtml:link
+      rel="alternate"
+      hreflang="pt-br"
+      href="https://igorlaltuf.github.io/tags/"
     /></url>
   <url>
     <loc>https://igorlaltuf.github.io/tag/dados-abertos/</loc><lastmod>2022-08-07T14:45:00+00:00</lastmod></url>
@@ -43,16 +125,6 @@
     <loc>https://igorlaltuf.github.io/talk/quer-aprender-a-programar-em-r-os-pacotes-vao-te-ajudar/</loc><lastmod>2022-08-07T14:45:00+00:00</lastmod></url>
   <url>
     <loc>https://igorlaltuf.github.io/tag/r/</loc><lastmod>2022-08-07T14:45:00+00:00</lastmod></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/tags/</loc><lastmod>2022-08-07T14:45:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/tags/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/tags/"
-    /></url>
   <url>
     <loc>https://igorlaltuf.github.io/courses/</loc><lastmod>2022-07-31T00:00:00+00:00</lastmod><xhtml:link
       rel="alternate"
@@ -102,8 +174,6 @@
   <url>
     <loc>https://igorlaltuf.github.io/tag/pandemia/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://igorlaltuf.github.io/tag/renda/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod></url>
-  <url>
     <loc>https://igorlaltuf.github.io/tag/rio-de-janeiro/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod></url>
   <url>
     <loc>https://igorlaltuf.github.io/tag/software/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod><xhtml:link
@@ -115,8 +185,6 @@
       hreflang="pt-br"
       href="https://igorlaltuf.github.io/tag/software/"
     /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/tag/vinculos-ativos/</loc><lastmod>2022-06-18T10:00:00+00:00</lastmod></url>
   <url>
     <loc>https://igorlaltuf.github.io/post/</loc><lastmod>2022-06-18T11:39:09-03:00</lastmod><xhtml:link
       rel="alternate"
@@ -140,16 +208,6 @@
       rel="alternate"
       hreflang="pt-br"
       href="https://igorlaltuf.github.io/post/como-usar-o-pacote-sidrar/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/tag/covid-19/</loc><lastmod>2021-12-03T17:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/tag/covid-19/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/tag/covid-19/"
     /></url>
   <url>
     <loc>https://igorlaltuf.github.io/tag/mobilidade-urbana/</loc><lastmod>2021-12-03T17:00:00+00:00</lastmod><xhtml:link
@@ -180,26 +238,6 @@
       rel="alternate"
       hreflang="pt-br"
       href="https://igorlaltuf.github.io/talk/indicadores-de-saude-nas-cidades-intermediarias-amazonicas-como-sinalizadores-de-segregacao-social-e-injustica-ambiental/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/publication-type/2/</loc><lastmod>2021-06-30T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/publication-type/2/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/publication-type/2/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/authors/</loc><lastmod>2021-06-30T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/authors/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/authors/"
     /></url>
   <url>
     <loc>https://igorlaltuf.github.io/tag/bndes/</loc><lastmod>2021-06-30T00:00:00+00:00</lastmod><xhtml:link
@@ -242,16 +280,6 @@
       href="https://igorlaltuf.github.io/publication/artigo-javier-2021/"
     /></url>
   <url>
-    <loc>https://igorlaltuf.github.io/author/igor-laltuf/</loc><lastmod>2021-06-30T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/author/igor-laltuf/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/author/igor-laltuf/"
-    /></url>
-  <url>
     <loc>https://igorlaltuf.github.io/author/javier-walter-ghibaudi/</loc><lastmod>2021-06-30T00:00:00+00:00</lastmod><xhtml:link
       rel="alternate"
       hreflang="en"
@@ -270,26 +298,6 @@
       rel="alternate"
       hreflang="pt-br"
       href="https://igorlaltuf.github.io/tag/neoliberalizacao/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/publication_types/</loc><lastmod>2021-06-30T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/publication_types/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/publication_types/"
-    /></url>
-  <url>
-    <loc>https://igorlaltuf.github.io/publication/</loc><lastmod>2021-06-30T00:00:00+00:00</lastmod><xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://igorlaltuf.github.io/en/publication/"
-    /><xhtml:link
-      rel="alternate"
-      hreflang="pt-br"
-      href="https://igorlaltuf.github.io/publication/"
     /></url>
   <url>
     <loc>https://igorlaltuf.github.io/slides/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod><xhtml:link

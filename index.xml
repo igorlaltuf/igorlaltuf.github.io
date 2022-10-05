@@ -5,12 +5,20 @@
     <link>https://igorlaltuf.github.io/</link>
       <atom:link href="https://igorlaltuf.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Igor Laltuf</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language><copyright>© 2022 Igor Laltuf</copyright><lastBuildDate>Sun, 07 Aug 2022 14:45:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language><copyright>© 2022 Igor Laltuf</copyright><lastBuildDate>Wed, 05 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://igorlaltuf.github.io/media/icon_hu765fed44f9da9f8bbfd31b2fd32d48fd_17366_512x512_fill_lanczos_center_3.png</url>
       <title>Igor Laltuf</title>
       <link>https://igorlaltuf.github.io/</link>
     </image>
+    
+    <item>
+      <title>Indicadores de saúde nas cidades intermediárias amazônicas durante a crise sanitária da Covid-19: sinalizadores de segregação social e injustiça ambiental</title>
+      <link>https://igorlaltuf.github.io/publication/artigo-sec-xxi/</link>
+      <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://igorlaltuf.github.io/publication/artigo-sec-xxi/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Quer aprender a programar em R? Os pacotes vão te ajudar</title>
@@ -25,10 +33,10 @@
       <link>https://igorlaltuf.github.io/project/material-dissertacao/</link>
       <pubDate>Sat, 18 Jun 2022 10:00:00 +0000</pubDate>
       <guid>https://igorlaltuf.github.io/project/material-dissertacao/</guid>
-      <description>&lt;p&gt;Os mapas abaixo fazem parte da Dissertação que será apresentada no Curso de Mestrado do Programa de Pós-Graduação em Planejamento Urbano e Regional da Universidade Federal do Rio de Janeiro – UFRJ, como parte dos requisitos necessários à obtenção do grau de Mestre em Planejamento Urbano e Regional.
+      <description>&lt;p&gt;Os mapas abaixo fazem parte da Dissertação do Curso de Mestrado do Programa de Pós-Graduação em Planejamento Urbano e Regional da Universidade Federal do Rio de Janeiro – UFRJ, como parte dos requisitos necessários à obtenção do grau de Mestre em Planejamento Urbano e Regional.
 &lt;br&gt;&lt;/p&gt;
-&lt;p&gt;Em caso de citação:&lt;/p&gt;
-&lt;p&gt;LALTUF, Igor. &lt;strong&gt;O Sistema BRT e a Economia Política do transporte público na cidade do Rio de Janeiro&lt;/strong&gt;. 2022. Dissertação (Mestrado em Planejamento Urbano e Regional). Instituto de Pesquisa e Planejamento Urbano e Regional, Universidade Federal do Rio de Janeiro, Rio de Janeiro, 2022.&lt;/p&gt;
+&lt;p&gt;Para citar:&lt;/p&gt;
+&lt;p&gt;LALTUF, Igor. &lt;strong&gt;A Economia Política do Sistema BRT da cidade do Rio de Janeiro&lt;/strong&gt;. 2022. Dissertação (Mestrado em Planejamento Urbano e Regional). Instituto de Pesquisa e Planejamento Urbano e Regional, Universidade Federal do Rio de Janeiro, Rio de Janeiro, 2022.&lt;/p&gt;
 &lt;p&gt;Mapa 1 - Percentual de residentes que receberam até 5 salários mínimos por bairro em 2010.&lt;/p&gt;
 &lt;iframe seamless src=&#34;mapa_bairros_rj.html&#34; width=&#34;100%&#34; height=&#34;500&#34;&gt;&lt;/iframe&gt;
 Fonte: Censo de 2010. Elaboração própria.
@@ -408,7 +416,7 @@ if porridge == &amp;quot;blueberry&amp;quot;:
     </item>
     
     <item>
-      <title>BNDES:grupos econômicos, setor público e sociedade civil (Capítulo 1)</title>
+      <title>BNDES: grupos econômicos, setor público e sociedade civil (Capítulo 1)</title>
       <link>https://igorlaltuf.github.io/publication/livro-ettern/</link>
       <pubDate>Wed, 07 Jun 2017 00:00:00 +0000</pubDate>
       <guid>https://igorlaltuf.github.io/publication/livro-ettern/</guid>

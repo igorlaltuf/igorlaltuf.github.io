@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>mobilidade urbana | Igor Laltuf</title>
-    <link>https://igorlaltuf.github.io/tag/mobilidade-urbana/</link>
-      <atom:link href="https://igorlaltuf.github.io/tag/mobilidade-urbana/index.xml" rel="self" type="application/rss+xml" />
-    <description>mobilidade urbana</description>
+    <title>Shiny App | Igor Laltuf</title>
+    <link>https://igorlaltuf.github.io/tag/shiny-app/</link>
+      <atom:link href="https://igorlaltuf.github.io/tag/shiny-app/index.xml" rel="self" type="application/rss+xml" />
+    <description>Shiny App</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>pt-br</language><copyright>© 2022 Igor Laltuf</copyright><lastBuildDate>Thu, 13 Oct 2022 10:00:00 +0000</lastBuildDate>
     <image>
       <url>https://igorlaltuf.github.io/media/icon_hu765fed44f9da9f8bbfd31b2fd32d48fd_17366_512x512_fill_lanczos_center_3.png</url>
-      <title>mobilidade urbana</title>
-      <link>https://igorlaltuf.github.io/tag/mobilidade-urbana/</link>
+      <title>Shiny App</title>
+      <link>https://igorlaltuf.github.io/tag/shiny-app/</link>
     </image>
     
     <item>
@@ -22,14 +22,6 @@
 Acesse a ferramenta pelo &lt;a href=&#34;https://igorlaltuf.shinyapps.io/onibus_fundao/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;link&lt;/a&gt;.
 &lt;br&gt;&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Mobilidade urbana no contexto (desigual) da pandemia de Covid-19</title>
-      <link>https://igorlaltuf.github.io/talk/mobilidade-urbana-no-contexto-desigual-da-pandemia-de-covid-19/</link>
-      <pubDate>Fri, 03 Dec 2021 17:00:00 +0000</pubDate>
-      <guid>https://igorlaltuf.github.io/talk/mobilidade-urbana-no-contexto-desigual-da-pandemia-de-covid-19/</guid>
-      <description></description>
     </item>
     
   </channel>
